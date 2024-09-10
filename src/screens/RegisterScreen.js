@@ -1,4 +1,3 @@
-// src/screens/RegisterScreen.js
 import React, { useState } from "react";
 import { View, Text, TextInput, Button, StyleSheet } from "react-native";
 import axios from "axios";
@@ -9,7 +8,6 @@ const RegisterScreen = ({ navigation }) => {
 
   const handleRegister = async () => {
     try {
-      // Thay thế URL và cấu hình axios với URL của bạn
       const response = await axios.post(
         "http://localhost:3000/api/v1/user/signup",
         {
